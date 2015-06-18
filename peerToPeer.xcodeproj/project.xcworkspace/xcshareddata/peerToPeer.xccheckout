@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D964BE03-D754-4EF3-8C4F-833BC6FF3F86</string>
+	<key>IDESourceControlProjectName</key>
+	<string>peerToPeer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF29BBB79FCC2ACBD54DB7D6197A90AA0902EBAC</key>
+		<string>https://github.com/mrvitalya/peerToPeer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>peerToPeer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF29BBB79FCC2ACBD54DB7D6197A90AA0902EBAC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mrvitalya/peerToPeer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF29BBB79FCC2ACBD54DB7D6197A90AA0902EBAC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF29BBB79FCC2ACBD54DB7D6197A90AA0902EBAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>peerToPeer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

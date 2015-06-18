@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="66c-1M-EEU">
-                    <rect key="frame" x="0.0" y="80" width="320" height="488"/>
+                    <rect key="frame" x="0.0" y="80" width="320" height="450"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="XHE-0y-ccj"/>
@@ -37,6 +37,17 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izn-2v-ckO">
+                    <rect key="frame" x="0.0" y="530" width="320" height="38"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Browse servers">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="browseButtonClick:" destination="-1" eventType="touchUpInside" id="8KY-hN-CBD"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>

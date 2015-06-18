@@ -7,7 +7,7 @@
 //
 
 #import "ConnectionManager.h"
-
+#import "PeersModel.h"
 
 @implementation ConnectionManager
 
@@ -28,19 +28,19 @@
 {
     self.peerID = [[MCPeerID alloc] initWithDisplayName:displayName];
     
-    self.session = [[MCSession alloc] initWithPeer:_peerID];
+    self.session = [[MCSession alloc] initWithPeer:self.peerID];
     self.session.delegate = self;
 }
 
 -(void)setupMCBrowser
 {
-    self.browser = [[MCBrowserViewController alloc] initWithServiceType:@"my-stream-peer" session:self.session];
+    self.browser = [[MCBrowserViewController alloc] initWithServiceType:@"my-stream" session:self.session];
 }
 
 -(void)advertiseSelf:(BOOL)shouldAdvertise
 {
     if (shouldAdvertise) {
-        self.advertiser = [[MCAdvertiserAssistant alloc] initWithServiceType:@"my-stream-peer"
+        self.advertiser = [[MCAdvertiserAssistant alloc] initWithServiceType:@"my-stream"
                                                            discoveryInfo:nil
                                                                  session:self.session];
         [self.advertiser start];
@@ -53,29 +53,34 @@
 -(void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state
 {
     
+    NSDictionary *dict = @{@"peerID": peerID,
+                           @"peerName":peerID.displayName,
+                           @"state" : [NSNumber numberWithInt:state]
+                           };
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MCDidChangeStateNotification"
+                                                        object:nil
+                                                      userInfo:dict];
 }
-
 
 -(void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
 {
     
 }
 
-
 -(void)session:(MCSession *)session didStartReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID withProgress:(NSProgress *)progress
 {
     
 }
-
 
 -(void)session:(MCSession *)session didFinishReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID atURL:(NSURL *)localURL withError:(NSError *)error
 {
     
 }
 
-
 -(void)session:(MCSession *)session didReceiveStream:(NSInputStream *)stream withName:(NSString *)streamName fromPeer:(MCPeerID *)peerID
 {
     
 }
+
 @end

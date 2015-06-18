@@ -22,6 +22,7 @@
 		AD7EC8E01B3187F1004AE0CA /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7EC8DE1B3187F1004AE0CA /* MainTableViewCell.xib */; };
 		AD7EC8E61B318B91004AE0CA /* BrowseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7EC8E41B318B91004AE0CA /* BrowseTableViewCell.m */; };
 		AD7EC8E71B318B91004AE0CA /* BrowseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7EC8E51B318B91004AE0CA /* BrowseTableViewCell.xib */; };
+		ADA8CFD71B32B2CE0086D065 /* PeersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA8CFD61B32B2CE0086D065 /* PeersModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		AD7EC8E31B318B91004AE0CA /* BrowseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseTableViewCell.h; sourceTree = "<group>"; };
 		AD7EC8E41B318B91004AE0CA /* BrowseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseTableViewCell.m; sourceTree = "<group>"; };
 		AD7EC8E51B318B91004AE0CA /* BrowseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseTableViewCell.xib; sourceTree = "<group>"; };
+		ADA8CFD51B32B2CE0086D065 /* PeersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeersModel.h; sourceTree = "<group>"; };
+		ADA8CFD61B32B2CE0086D065 /* PeersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeersModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 			children = (
 				AD7EC8CB1B315BF3004AE0CA /* ConnectionManager.h */,
 				AD7EC8CC1B315BF3004AE0CA /* ConnectionManager.m */,
+				ADA8CFD41B32B12D0086D065 /* Models */,
 			);
 			name = ConnectionManager;
 			sourceTree = "<group>";
@@ -212,6 +216,15 @@
 				AD7EC8E51B318B91004AE0CA /* BrowseTableViewCell.xib */,
 			);
 			name = BrowseTableViewCell;
+			sourceTree = "<group>";
+		};
+		ADA8CFD41B32B12D0086D065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADA8CFD51B32B2CE0086D065 /* PeersModel.h */,
+				ADA8CFD61B32B2CE0086D065 /* PeersModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +333,7 @@
 			files = (
 				AD7EC8A61B315ABF004AE0CA /* AppDelegate.m in Sources */,
 				AD7EC8CD1B315BF3004AE0CA /* ConnectionManager.m in Sources */,
+				ADA8CFD71B32B2CE0086D065 /* PeersModel.m in Sources */,
 				AD7EC8C91B315B1C004AE0CA /* MainViewController.m in Sources */,
 				AD7EC8E61B318B91004AE0CA /* BrowseTableViewCell.m in Sources */,
 				AD7EC8A31B315ABF004AE0CA /* main.m in Sources */,
@@ -510,6 +524,7 @@
 				AD7EC8C21B315ABF004AE0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD7EC8C31B315ABF004AE0CA /* Build configuration list for PBXNativeTarget "peerToPeerTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +533,7 @@
 				AD7EC8C51B315ABF004AE0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
